@@ -21,3 +21,20 @@
 */
 
 // YOUR CODE HERE
+
+
+var inputString = prompt("input word to check for palindromity");
+var inputArr=inputString.replace(/[^A-Z0-9]/ig,"").toLowerCase().split('');
+console.log(inputArr);
+var counter=0;
+var length = Math.floor(inputArr.length);
+for(var i=1; i<length/2;i++){
+  if(inputArr[i-1]!==inputArr[length-i]){
+    counter+=i;}}
+    console.log(counter);
+  if(counter!==0){
+  alert("Does Not Contain Properties of Palindrome");
+}
+  else{
+  alert("It's a Palindrome");}
+  

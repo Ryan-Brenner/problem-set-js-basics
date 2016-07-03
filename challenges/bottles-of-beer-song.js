@@ -22,3 +22,42 @@
 */
 
 // YOUR CODE HERE
+
+
+var bottlecount = prompt("how many bottles of ____ shall we drink?");
+var bottlecount = parseInt(bottlecount);
+if(Number.isInteger(bottlecount)===false){
+alert("Nice Try! but that is not a number go back to Sesame St.");
+}
+else{
+
+for(i=bottlecount;i>=1;i--){
+  if(i>2){
+console.log(i+" bottles of beer on the wall,");
+console.log(i+" bottles of beer!");
+console.log("take one down and pass it around,");
+console.log(i-1+" bottles of beer on the wall...");
+console.log();
+}
+if(i===2){
+console.log(i+" bottles of beer on the wall,");
+console.log(i+" bottles of beer!");
+console.log("take one down and pass it around,");
+console.log(i-1+" bottle of beer on the wall...");
+console.log();
+}
+
+if (i===1){
+console.log("1 bottle of beer on the wall,");
+console.log("1 bottle of beer!");
+console.log("take it down and pass it around, savor the flavor");
+console.log("no more bottles of beer on the wall...");
+console.log();
+}}}
+
+
+
+
+
+
+}
